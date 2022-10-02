@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    
+}
+.navbar-brand {
+   padding-left: 20px;
+}
+.nav-item {
+    padding-top: 10px;  
+}
+.navbar-nav li a {
+    float: right;
+    text-align: left;
+}
+.col img {
+    max-width: 100%;
+}
+.value {
+    background-image: url(our_value.jpeg);
+    background-size: cover;
+    height: 100vh;
+    background-position: 50% 50%;
+    width: 100%;
+}
+.value button {
+    border: 0;
+    background-color: red;
+    color: white;
+    height: 36px;
+    width: 150px;
+}
+
+.counter {
+    background-image: url(counter.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: 50% 50%;
+    width: 100%;
+}
+.range {
+    background-color: #dbddf1;
+    box-sizing: border-box;
+    position: relative;
+}
+
+ .range .row .column {
+    float: left;
+    width: 25%;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+
+  .range .row .column img:hover {
+    cursor: pointer;;
+  }
+ 
+ .range .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .range .row .column .content{
+	/* background: rgba(0,0,0,.7); */
+	position: absolute;
+	top: -100%;
+	left: 0;
+	text-align: justify;
+	height: 100%;
+	color: white;
+	box-sizing: border-box;
+	transition: all .5s;
+}
+.range .row .column .content h3{
+	text-align: center;
+	font-size: 25px;
+	border-bottom: 1px solid #808080;
+	padding: 0 10px 20px 10px;
+}
